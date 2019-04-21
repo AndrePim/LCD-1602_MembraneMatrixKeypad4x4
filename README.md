@@ -7,6 +7,6 @@ Project Arduino Uno with LCD-1602 and Matrix Keypad 4x4
 
 Components 
 
-- 1 - Arduino Mega2560
+- 1 - Arduino Uno
 - 1 - Matrix Keypad 4x4
 - 1 - LCD1602
