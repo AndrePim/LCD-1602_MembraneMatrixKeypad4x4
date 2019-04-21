@@ -13,8 +13,11 @@ char hexaKeys[ROWS][COLS] = {
   {'*', '0', '#', 'D'}
 };
 
-byte rowPins[ROWS] = {9, 8, 7, 6}; // Назначение пинов Arduino Uno для строк
-byte colPins[COLS] = {5, 4, 3, 2}; // назначение пинов Arduino Uno для столбцов
+// yte rowPins[ROWS] = {9, 8, 7, 6}; // Назначение пинов Arduino Uno для строк
+// byte colPins[COLS] = {5, 4, 3, 2}; // назначение пинов Arduino Uno для столбцов
+
+byte rowPins[ROWS] = {29, 27, 25, 23}; // назначение пинов Arduino Mega2560 для строк
+byte colPins[COLS] = {37, 35, 33, 31}; // Назначение пинов Arduino Mega2560 для столбцов
 
 // Объявление переменной для матричной клавиатуры(Раскладка, Пины для строк, Пины для столбцов, Количество строк, Количество столбцов)
 Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS);  
